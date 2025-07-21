@@ -141,7 +141,7 @@ const Navbar = ({ showUserMenu = true }: NavbarProps) => {
                         onClick={() => handleNavigation("/recordings", "Recordings")}
                       >
                         <p className="text-sm text-white font-medium">Recording ready</p>
-                        <p className="text-xs text-sky-1">Yesterday's meeting is available</p>
+                        <p className="text-xs text-sky-1">Yesterday&#39;s meeting is available</p>
                       </div>
                       <div
                         className="p-3 hover:bg-dark-3/50 rounded-lg cursor-pointer transition-colors"

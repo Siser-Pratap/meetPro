@@ -1,8 +1,8 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { useUser } from "@clerk/nextjs"
-import { useRouter } from "next/navigation"
+
+// import { useUser } from "@clerk/nextjs"
+// import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -22,21 +22,13 @@ import {
   Download,
 } from "lucide-react"
 import Link from "next/link"
-import Loader from "@/components/Loader"
+// import Loader from "@/components/Loader"
 
 const HomePage = () => {
   // const { user, isLoaded } = useUser()
   // const router = useRouter();
   
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 2000)
-
-    return () => clearTimeout(timer)
-  }, [])
+  
 
   // useEffect(() => {
   //   if (isLoaded && user) {
@@ -295,8 +287,8 @@ const HomePage = () => {
                   <span className="text-slate-300 font-semibold">4.9/5 Rating</span>
                 </div>
                 <blockquote className="text-lg text-slate-300 mb-6 italic">
-                  "MeetPro has transformed how our distributed team collaborates. The video quality is exceptional, and
-                  the features are exactly what we needed for productive meetings."
+                  &quot;MeetPro has transformed how our distributed team collaborates. The video quality is exceptional, and
+                  the features are exactly what we needed for productive meetings.&quot;
                 </blockquote>
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
