@@ -1,446 +1,203 @@
+<div align="center"><p>🎥 MeetPro - Video Conferencing Platform</p></div>
+
 <div align="center">
-  <br />
-    <a href="https://youtu.be/R8CIO1DZ2b8" target="_blank">
-      <img src="https://github.com/adrianhajdin/zoom-clone/assets/67959015/f09a8421-67d3-45ce-b9bc-a791cdc2774b" alt="Project Banner">
-    </a>
-  
-  <br />
-
-  <div>
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+  <p align="center">
+    <b>A modern, feature-rich video conferencing platform with stunning animations and professional UI</b>
+  </p>
+  <p align="center">
+    <a href="#features">Features</a> •
+    <a href="#tech-stack">Tech Stack</a> •
+    <a href="#implementation">Implementation</a> •
+    <a href="#getting-started">Getting Started</a> •
+    <a href="#contributing">Contributing</a> •
+    <a href="#contact">Contact</a>
+  </p>
+  <div align="center">
+    <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Stream-005FFF?style=for-the-badge&logo=streamlit&logoColor=white" alt="Stream" />
+    <img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" alt="Clerk" />
   </div>
-
-  <h3 align="center">A Zoom Clone</h3>
-
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
 </div>
 
-## 📋 <a name="table">Table of Contents</a>
+<br />
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Assets & Code](#snippets)
-6. 🚀 [More](#more)
+## 🌟 Introduction
 
-## 🚨 Tutorial
+MeetPro is a cutting-edge video conferencing platform that combines the power of modern web technologies with a beautiful, responsive user interface. The application features smooth animations, a professional dark-themed design, and a comprehensive set of features including secure authentication, real-time video meetings, screen sharing, and meeting management capabilities.
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
+<div align="center">
+  <a href="https://your-meetpro-demo.vercel.app/">
+    <img src="https://res.cloudinary.com/your-cloudinary/image/upload/v1234567890/meetpro-demo.png" alt="MeetPro Demo" width="600" height="400" />
+  </a>
+</div>
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
+<div id="features"></div>
 
-<a href="https://youtu.be/R8CIO1DZ2b8" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+## ✨ Features
 
-## <a name="introduction">🤖 Introduction</a>
+<div class="features-grid">
+  <div class="feature-card">
+    <h3>🎥 HD Video Conferencing</h3>
+    <p>Crystal clear video quality with adaptive streaming technology for seamless meetings</p>
+  </div>
 
-Built with the latest Next.js and TypeScript, this project replicates Zoom, a widely used video conferencing tool. It enables users to securely log in, create meetings and access various meeting functionalities such as recording, screen sharing, and managing participants.
+  <div class="feature-card">
+    <h3>🔒 Secure Authentication</h3>
+    <p>Complete authentication flow with Clerk integration, sign-up, sign-in, and user management</p>
+  </div>
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over 30 thousand members. It's a place where people help each other out.
+  <div class="feature-card">
+    <h3>🌓 Professional Dark Theme</h3>
+    <p>Sleek dark-themed UI with custom color palette for comfortable viewing</p>
+  </div>
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+  <div class="feature-card">
+    <h3>📱 Fully Responsive</h3>
+    <p>Adaptive layouts that work beautifully on desktop, tablet, and mobile devices</p>
+  </div>
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+  <div class="feature-card">
+    <h3>🏠 Personal Meeting Rooms</h3>
+    <p>Dedicated personal meeting spaces with permanent links for instant access</p>
+  </div>
 
-- Next.js
-- TypeScript
-- Clerk
-- getstream
-- shadcn
-- Tailwind CSS
+  <div class="feature-card">
+    <h3>✨ Smooth Animations</h3>
+    <p>Beautiful CSS and JavaScript-powered animations throughout the application</p>
+  </div>
 
-## <a name="features">🔋 Features</a>
+  <div class="feature-card">
+    <h3>📅 Meeting Scheduling</h3>
+    <p>Advanced scheduling system with calendar integration and automated reminders</p>
+  </div>
 
+  <div class="feature-card">
+    <h3>📊 Meeting Analytics</h3>
+    <p>Comprehensive dashboard with meeting statistics and activity tracking</p>
+  </div>
 
-👉 **Authentication**: Implements authentication and authorization features using Clerk, allowing users to securely log in via social sign-on or traditional email and password methods, while ensuring appropriate access levels and permissions within the platform.
+  <div class="feature-card">
+    <h3>🎬 Meeting Recordings</h3>
+    <p>Record meetings with cloud storage and easy playback functionality</p>
+  </div>
 
-👉 **New Meeting**: Quickly start a new meeting, configuring camera and microphone settings before joining.
+  <div class="feature-card">
+    <h3>🔗 Instant Meeting Links</h3>
+    <p>Generate and share meeting links instantly with one-click copying</p>
+  </div>
 
-👉 **Meeting Controls**: Participants have full control over meeting aspects, including recording, emoji reactions, screen sharing, muting/unmuting, sound adjustments, grid layout, participant list view, and individual participant management (pinning, muting, unmuting, blocking, allowing video share).
+  <div class="feature-card">
+    <h3>🎛️ Advanced Controls</h3>
+    <p>Full meeting controls including mute, video toggle, screen sharing, and participant management</p>
+  </div>
 
-👉 **Exit Meeting**: Participants can leave a meeting, or creators can end it for all attendees.
+  <div class="feature-card">
+    <h3>🔔 Smart Notifications</h3>
+    <p>Toast notifications and alerts for meeting updates and system events</p>
+  </div>
+</div>
 
-👉 **Schedule Future Meetings**: Input meeting details (date, time) to schedule future meetings, accessible on the 'Upcoming Meetings' page for sharing the link or immediate start.
+<div id="tech-stack"></div>
 
-👉 **Past Meetings List**: Access a list of previously held meetings, including details and metadata.
+## 🛠️ Tech Stack
 
-👉 **View Recorded Meetings**: Access recordings of past meetings for review or reference.
+<p align="center">
+  <img src="https://imgs.search.brave.com/BjI0NRFCTlF2KZYQBJ7W7U9RW9ZdINwZR15cPgSdzHU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzMyLzEvbmV4dC1q/cy1sb2dvLXBuZ19z/ZWVrbG9nby0zMjE4/MDYucG5n" alt="Next.js" width="60" height="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" width="60" height="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="60" height="60" />
+  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" width="60" height="60" />
+  <img src="https://avatars.githubusercontent.com/u/139895814?s=200&v=4" alt="shadcn/ui" width="60" height="60" />
+  <img src="https://lucide.dev/logo.light.svg" alt="Lucide React" width="60" height="60" />
+  <img src="https://getstream.io/images/favicons/favicon-96x96.png" alt="Stream Video SDK" width="60" height="60" />
+  <img src="https://clerk.com/favicon.ico" alt="Clerk Auth" width="60" height="60" />
+</p>
 
-👉 **Personal Room**: Users have a personal room with a unique meeting link for instant meetings, shareable with others.
+### Core Technologies
+- **Next.js 14** - React framework with App Router
+- **React 18** - UI library with hooks and context
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
 
-👉 **Join Meetings via Link**: Easily join meetings created by others by providing a link.
+### UI & Components
+- **shadcn/ui** - Modern component library
+- **Lucide React** - Beautiful icon library
+- **Radix UI** - Accessible component primitives
+- **Sonner** - Toast notification system
 
-👉 **Secure Real-time Functionality**: All interactions within the platform are secure and occur in real-time, maintaining user privacy and data integrity.
+### Video & Authentication
+- **Stream Video SDK** - Real-time video infrastructure
+- **Clerk** - Complete authentication solution
+- **React Datepicker** - Date and time selection
 
-👉 **Responsive Design**: Follows responsive design principles to ensure optimal user experience across devices, adapting seamlessly to different screen sizes and resolutions.
+<div id="implementation"></div>
 
-and many more, including code architecture and reusability. 
+## 🔍 Implementation
 
-## <a name="quick-start">🤸 Quick Start</a>
+The MeetPro platform includes the following key implementations:
 
-Follow these steps to set up the project locally on your machine.
+### 🔐 Authentication System
+- Complete Clerk integration with customized appearance
+- Sign-up and sign-in flows with social authentication
+- User profile management and settings
+- Protected routes and middleware
+- Session management and persistence
 
-**Prerequisites**
+### 🎥 Video Conferencing
+- Stream Video SDK integration for real-time communication
+- HD video and audio streaming
+- Screen sharing capabilities
+- Participant management and controls
+- Meeting recording functionality
+- Adaptive video quality based on network conditions
 
-Make sure you have the following installed on your machine:
+### 📅 Meeting Management
+- Personal meeting rooms with permanent links
+- Instant meeting creation and joining
+- Advanced meeting scheduling with date/time picker
+- Meeting history and analytics
+- Invitation link generation and sharing
+- Meeting status tracking (upcoming, ongoing, completed)
 
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
+### 🎨 UI/UX Features
+- Custom dark theme with professional color palette
+- Smooth CSS animations and transitions
+- Responsive navigation with sidebar and mobile bottom nav
+- Interactive dashboard with real-time statistics
+- Loading states and skeleton screens
+- Toast notifications for user feedback
+- Breadcrumb navigation system
 
-**Cloning the Repository**
+### 📱 Responsive Design
+- Mobile-first approach with adaptive layouts
+- Touch-friendly interface elements
+- Optimized performance across devices
+- Progressive Web App capabilities
+- Offline functionality for core features
 
+### 🧩 Component Architecture
+- Server and client components separation
+- Custom hooks for shared functionality (useGetCalls, useRedirectToast)
+- Reusable UI components with consistent styling
+- Proper state management with React hooks
+- TypeScript interfaces for type safety
+
+<div id="getting-started"></div>
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally:
+
+### Prerequisites
+- Node.js 18.x or later
+- npm or yarn
+- Git
+
+### Installation
+
+1. Clone the repository:
 ```bash
-git clone https://github.com/adrianhajdin/zoom-clone.git
-cd zoom-clone
-```
-
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
-
-```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-
-NEXT_PUBLIC_STREAM_API_KEY=
-STREAM_SECRET_KEY=
-```
-
-Replace the placeholder values with your actual Clerk & getstream credentials. You can obtain these credentials by signing up on the [Clerk website](https://clerk.com/) and [getstream website](https://getstream.io/)
-
-**Running the Project**
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-## <a name="snippets">🕸️ Snippets</a>
-
-<details>
-<summary><code>app/globals.css</code></summary>
-
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ======== stream css overrides ======== */
-.str-video__call-stats {
-  max-width: 500px;
-  position: relative;
-}
-
-.str-video__speaker-layout__wrapper {
-  max-height: 700px;
-}
-
-.str-video__participant-details {
-  color: white;
-}
-
-.str-video__menu-container {
-  color: white;
-}
-
-.str-video__notification {
-  color: white;
-}
-
-.str-video__participant-list {
-  background-color: #1c1f2e;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  height: 100%;
-}
-
-.str-video__call-controls__button {
-  height: 40px;
-}
-
-.glassmorphism {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-.glassmorphism2 {
-  background: rgba(18, 17, 17, 0.25);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-/* ==== clerk class override ===== */
-
-.cl-userButtonPopoverActionButtonIcon {
-  color: white;
-}
-
-.cl-logoBox {
-  height: 40px;
-}
-.cl-dividerLine {
-  background: #252a41;
-  height: 2px;
-}
-
-.cl-socialButtonsIconButton {
-  border: 3px solid #565761;
-}
-
-.cl-internal-wkkub3 {
-  color: white;
-}
-.cl-userButtonPopoverActionButton {
-  color: white;
-}
-
-/* =============================== */
-
-@layer utilities {
-  .flex-center {
-    @apply flex justify-center items-center;
-  }
-
-  .flex-between {
-    @apply flex justify-between items-center;
-  }
-}
-
-/* animation */
-
-.show-block {
-  width: 100%;
-  max-width: 350px;
-  display: block;
-  animation: show 0.7s forwards linear;
-}
-
-@keyframes show {
-  0% {
-    animation-timing-function: ease-in;
-    width: 0%;
-  }
-
-  100% {
-    animation-timing-function: ease-in;
-    width: 100%;
-  }
-}
-```
-
-</details>
-
-<details>
-<summary><code>tailwind.config.ts</code></summary>
-
-```typescript
-import type { Config } from 'tailwindcss';
-
-const config = {
-  darkMode: ['class'],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-  ],
-  prefix: '',
-  theme: {
-    container: {
-      center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px',
-      },
-    },
-    extend: {
-      colors: {
-        dark: {
-          1: '#1C1F2E',
-          2: '#161925',
-          3: '#252A41',
-          4: '#1E2757',
-        },
-        blue: {
-          1: '#0E78F9',
-        },
-        sky: {
-          1: '#C9DDFF',
-          2: '#ECF0FF',
-          3: '#F5FCFF',
-        },
-        orange: {
-          1: '#FF742E',
-        },
-        purple: {
-          1: '#830EF9',
-        },
-        yellow: {
-          1: '#F9A90E',
-        },
-      },
-      keyframes: {
-        'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' },
-        },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
-        },
-      },
-      animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
-      },
-      backgroundImage: {
-        hero: "url('/images/hero-background.png')",
-      },
-    },
-  },
-  plugins: [require('tailwindcss-animate')],
-} satisfies Config;
-
-export default config;
-```
-
-</details>
-
-<details>
-<summary><code>components/MeetingCard.tsx</code></summary>
-
-```typescript
-"use client";
-
-import Image from "next/image";
-
-import { cn } from "@/lib/utils";
-import { Button } from "./ui/button";
-import { avatarImages } from "@/constants";
-import { useToast } from "./ui/use-toast";
-
-interface MeetingCardProps {
-  title: string;
-  date: string;
-  icon: string;
-  isPreviousMeeting?: boolean;
-  buttonIcon1?: string;
-  buttonText?: string;
-  handleClick: () => void;
-  link: string;
-}
-
-const MeetingCard = ({
-  icon,
-  title,
-  date,
-  isPreviousMeeting,
-  buttonIcon1,
-  handleClick,
-  link,
-  buttonText,
-}: MeetingCardProps) => {
-  const { toast } = useToast();
-
-  return (
-    <section className="flex min-h-[258px] w-full flex-col justify-between rounded-[14px] bg-dark-1 px-5 py-8 xl:max-w-[568px]">
-      <article className="flex flex-col gap-5">
-        <Image src={icon} alt="upcoming" width={28} height={28} />
-        <div className="flex justify-between">
-          <div className="flex flex-col gap-2">
-            <h1 className="text-2xl font-bold">{title}</h1>
-            <p className="text-base font-normal">{date}</p>
-          </div>
-        </div>
-      </article>
-      <article className={cn("flex justify-center relative", {})}>
-        <div className="relative flex w-full max-sm:hidden">
-          {avatarImages.map((img, index) => (
-            <Image
-              key={index}
-              src={img}
-              alt="attendees"
-              width={40}
-              height={40}
-              className={cn("rounded-full", { absolute: index > 0 })}
-              style={{ top: 0, left: index * 28 }}
-            />
-          ))}
-          <div className="flex-center absolute left-[136px] size-10 rounded-full border-[5px] border-dark-3 bg-dark-4">
-            +5
-          </div>
-        </div>
-        {!isPreviousMeeting && (
-          <div className="flex gap-2">
-            <Button onClick={handleClick} className="rounded bg-blue-1 px-6">
-              {buttonIcon1 && (
-                <Image src={buttonIcon1} alt="feature" width={20} height={20} />
-              )}
-              &nbsp; {buttonText}
-            </Button>
-            <Button
-              onClick={() => {
-                navigator.clipboard.writeText(link);
-                toast({
-                  title: "Link Copied",
-                });
-              }}
-              className="bg-dark-4 px-6"
-            >
-              <Image
-                src="/icons/copy.svg"
-                alt="feature"
-                width={20}
-                height={20}
-              />
-              &nbsp; Copy Link
-            </Button>
-          </div>
-        )}
-      </article>
-    </section>
-  );
-};
-
-export default MeetingCard;
-```
-
-</details>
-
-## <a name="links">🔗 Links</a>
-
-Public assets used in the project can be found [here](https://drive.google.com/file/d/1ofTpWii_sCIdJ14uQ431xWVXpYgjtQ8Q/view?usp=sharing)
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning experience. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://www.jsmastery.pro/ultimate-next-course" target="_blank">
-<img src="https://i.ibb.co/804sPK6/Image-720.png" alt="Project Banner">
-</a>
+git clone https://github.com/yourusername/meetpro-app.git
+cd meetpro-app
