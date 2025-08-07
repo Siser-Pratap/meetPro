@@ -14,7 +14,6 @@ import {
   Plus,
   ChevronLeft,
   ChevronRight,
-  Settings,
   HelpCircle,
 } from "lucide-react"
 import { useRedirectToast } from "@/hooks/useRedirectToast"
@@ -62,11 +61,7 @@ const Sidebar = ({ className = "" }: SidebarProps) => {
   ]
 
   const bottomItems = [
-    {
-      name: "Settings",
-      href: "/settings",
-      icon: Settings,
-    },
+    
     {
       name: "Help",
       href: "/help",
@@ -159,9 +154,9 @@ const Sidebar = ({ className = "" }: SidebarProps) => {
                 <Icon className="w-5 h-5 flex-shrink-0" />
                 {!isCollapsed && (
                   <>
-                    <span className="ml-3 flex-1 text-left">{item.name}</span>
+                    <span className="ml-3 flex-1  text-left">{item.name}</span>
                     {item.badge && (
-                      <Badge className="ml-2 bg-blue-1/20 text-blue-1 border-blue-1/30 text-xs">{item.badge}</Badge>
+                      <Badge className="ml-2  bg-blue-1/20 text-blue-1 border-blue-1/30 text-xs">{item.badge}</Badge>
                     )}
                   </>
                 )}
@@ -180,7 +175,7 @@ const Sidebar = ({ className = "" }: SidebarProps) => {
                 variant="ghost"
                 onClick={() => handleNavigation(item.href, item.name)}
                 className={`w-full justify-start transition-all duration-300 focus-ring ${
-                  isCollapsed ? "px-3" : "px-4"
+                  isCollapsed ? "px-5" : "px-4"
                 } text-sky-1 hover:text-white hover:bg-dark-3/50`}
               >
                 <Icon className="w-5 h-5 flex-shrink-0" />

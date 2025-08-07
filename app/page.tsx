@@ -1,8 +1,6 @@
 "use client"
 
 
-// import { useUser } from "@clerk/nextjs"
-// import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -14,35 +12,17 @@ import {
   Monitor,
   Clock,
   ArrowRight,
-  Play,
+
   Star,
   CheckCircle,
   Zap,
   Globe,
-  Download,
+  
 } from "lucide-react"
 import Link from "next/link"
-// import Loader from "@/components/Loader"
 
 const HomePage = () => {
-  // const { user, isLoaded } = useUser()
-  // const router = useRouter();
   
-  
-
-  // useEffect(() => {
-  //   if (isLoaded && user) {
-  //     router.push("/dashboard")
-  //   }
-  // }, [isLoaded, user, router])
-
-  // if (!isLoaded || isLoading) {
-  //   return <Loader />
-  // }
-
-  // if (user) {
-  //   return <Loader />
-  // }
 
   const features = [
     {
@@ -101,7 +81,6 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white overflow-hidden">
-      {/* Navigation */}
       <nav className="relative z-50 flex items-center justify-between p-6 backdrop-blur-sm bg-slate-950/80 border-b border-slate-800">
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-500 rounded-xl flex items-center justify-center">
@@ -128,9 +107,8 @@ const HomePage = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      
       <section className="relative flex flex-col items-center justify-center min-h-[90vh] px-6 text-center">
-        {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -138,7 +116,7 @@ const HomePage = () => {
 
         <div className="relative z-10 max-w-5xl mx-auto space-y-8">
           <Badge className="bg-blue-600/10 text-blue-400 border-blue-600/20 px-4 py-2 text-sm font-medium">
-            🚀 Now with AI-powered features
+            🚀 AI-powered features incoming
           </Badge>
 
           <div className="space-y-6">
@@ -168,18 +146,7 @@ const HomePage = () => {
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-slate-700 hover:bg-slate-800 transition-all duration-300 px-8 py-4 text-lg font-semibold group bg-transparent"
-            >
-              <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
-              Watch Demo
-            </Button>
           </div>
-
-          {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16">
             {stats.map((stat, index) => (
               <div key={index} className="text-center group">
@@ -195,8 +162,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-      {/* Features Section */}
       <section className="py-24 px-6 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -227,7 +192,7 @@ const HomePage = () => {
                   >
                     <feature.icon className="w-7 h-7" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-blue-300 transition-colors">
+                  <h3 className="text-xl font-semibold mb-3 text-white/50 group-hover:text-blue-300 transition-colors">
                     {feature.title}
                   </h3>
                   <p className="text-slate-400 group-hover:text-slate-300 transition-colors leading-relaxed">
@@ -239,8 +204,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-      {/* Benefits Section */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -281,7 +244,7 @@ const HomePage = () => {
                 <div className="flex items-center space-x-4 mb-6">
                   <div className="flex -space-x-2">
                     {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                      <Star key={i} className="w-5 p-1 h-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
                   <span className="text-slate-300 font-semibold">4.9/5 Rating</span>
@@ -304,8 +267,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
       <section className="py-24 px-6 bg-gradient-to-r from-blue-900/20 to-purple-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -328,47 +289,27 @@ const HomePage = () => {
                 Get Started Free
               </Button>
             </Link>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-slate-700 hover:bg-slate-800 transition-all duration-300 px-12 py-4 text-lg font-semibold bg-transparent"
-            >
-              <Download className="mr-2 w-5 h-5" />
-              Download App
-            </Button>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
       <footer className="border-t border-slate-800 py-12 px-6 bg-slate-950">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-col md:flex-row items-center justify-center">
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg flex items-center justify-center">
                 <Video className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold">MeetPro</span>
             </div>
-
-            <div className="flex items-center space-x-8 text-slate-400">
-              <a href="#" className="hover:text-white transition-colors">
-                Privacy
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Terms
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Support
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Contact
-              </a>
-            </div>
+            
           </div>
-
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 MeetPro. Built with Next.js, TypeScript & Tailwind CSS.</p>
+          <div className="border-t hover:cursor-pointer border-slate-800 mt-8 pt-8 text-center text-slate-400">
+            <button className="p-3 bg-blue-600 hover:bg-purple-600 text-black rounded-full font-bold italic
+            ">
+            <a href="https://portfolio-siser-pratap.vercel.app">
+              <p>Siser Pratap</p>
+            </a>
+            </button>
           </div>
         </div>
       </footer>
