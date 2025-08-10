@@ -17,6 +17,7 @@
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
     <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Stream-005FFF?style=for-the-badge&logo=streamlit&logoColor=white" alt="Stream" />
     <img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" alt="Clerk" />
   </div>
 </div>
@@ -110,6 +111,7 @@ MeetPro is a cutting-edge video conferencing platform that combines the power of
   <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" width="60" height="60" />
   <img src="https://avatars.githubusercontent.com/u/139895814?s=200&v=4" alt="shadcn/ui" width="60" height="60" />
   <img src="https://lucide.dev/logo.light.svg" alt="Lucide React" width="60" height="60" />
+  <img src="https://img.shields.io/badge/Stream-005FFF?style=for-the-badge&logo=streamlit&logoColor=white" alt="Stream" />
   <img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" alt="Clerk" />
 </p>
 
