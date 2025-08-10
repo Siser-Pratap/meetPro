@@ -2,20 +2,10 @@
 
 import { useState } from "react"
 import { usePathname } from "next/navigation"
+import { useClerk } from "@clerk/nextjs"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import {
-  Video,
-  Home,
-  User,
-  Calendar,
-  Clock,
-  PlayCircle,
-  Plus,
-  ChevronLeft,
-  ChevronRight,
-  HelpCircle,
-} from "lucide-react"
+import { Video, Home, User, Calendar, Clock, PlayCircle, Plus, ChevronLeft, ChevronRight, LogOut } from "lucide-react"
 import { useRedirectToast } from "@/hooks/useRedirectToast"
 
 interface SidebarProps {
@@ -26,6 +16,7 @@ const Sidebar = ({ className = "" }: SidebarProps) => {
   const pathname = usePathname()
   const [isCollapsed, setIsCollapsed] = useState(false)
   const { redirectWithToast, showToast } = useRedirectToast()
+  const { signOut } = useClerk()
 
   const navigationItems = [
     {
@@ -61,11 +52,11 @@ const Sidebar = ({ className = "" }: SidebarProps) => {
   ]
 
   const bottomItems = [
-    
     {
-      name: "Help",
-      href: "/help",
-      icon: HelpCircle,
+      name: "Log Out",
+      href: "/logout",
+      icon: LogOut,
+      action: "logout",
     },
   ]
 
@@ -80,9 +71,31 @@ const Sidebar = ({ className = "" }: SidebarProps) => {
     }
   }
 
+  const handleLogout = async () => {
+    try {
+      showToast("Logging out...", "info")
+
+      await signOut({
+        redirectUrl: "/sign-in", // Redirect to sign-in page after logout
+      })
+
+      showToast("Successfully logged out", "success")
+    } catch (error) {
+      console.error("Logout error:", error)
+      showToast("Failed to log out. Please try again.", "error")
+    }
+  }
+
+  const handleBottomItemClick = (item: any) => {
+    if (item.action === "logout") {
+      handleLogout()
+    } else {
+      handleNavigation(item.href, item.name)
+    }
+  }
+
   const handleNewMeeting = () => {
     showToast("Creating new meeting...", "info")
-    // Add your new meeting logic here
     setTimeout(() => {
       redirectWithToast("/meeting/new", {
         message: "Joining meeting room...",
@@ -93,7 +106,7 @@ const Sidebar = ({ className = "" }: SidebarProps) => {
 
   return (
     <div
-      className={`fixed left-0 top-16 h-[calc(100vh-4rem)] bg-dark-1/80 backdrop-blur-md border-r border-dark-3/50 transition-all duration-300 z-40 ${
+      className={`fixed left-0 top-16 h-[calc(100vh-4rem)] hidden md:block bg-dark-1/80 backdrop-blur-md border-r border-dark-3/50 transition-all duration-300 z-40 ${
         isCollapsed ? "w-16" : "w-64"
       } ${className}`}
     >
@@ -154,9 +167,9 @@ const Sidebar = ({ className = "" }: SidebarProps) => {
                 <Icon className="w-5 h-5 flex-shrink-0" />
                 {!isCollapsed && (
                   <>
-                    <span className="ml-3 flex-1  text-left">{item.name}</span>
+                    <span className="ml-3 flex-1 text-left">{item.name}</span>
                     {item.badge && (
-                      <Badge className="ml-2  bg-blue-1/20 text-blue-1 border-blue-1/30 text-xs">{item.badge}</Badge>
+                      <Badge className="ml-2 bg-blue-1/20 text-blue-1 border-blue-1/30 text-xs">{item.badge}</Badge>
                     )}
                   </>
                 )}
@@ -173,10 +186,10 @@ const Sidebar = ({ className = "" }: SidebarProps) => {
               <Button
                 key={item.name}
                 variant="ghost"
-                onClick={() => handleNavigation(item.href, item.name)}
+                onClick={() => handleBottomItemClick(item)}
                 className={`w-full justify-start transition-all duration-300 focus-ring ${
                   isCollapsed ? "px-5" : "px-4"
-                } text-sky-1 hover:text-white hover:bg-dark-3/50`}
+                } text-sky-1 hover:text-red-400 hover:bg-red-500/10 border border-transparent hover:border-red-500/20`}
               >
                 <Icon className="w-5 h-5 flex-shrink-0" />
                 {!isCollapsed && <span className="ml-3 text-left">{item.name}</span>}
