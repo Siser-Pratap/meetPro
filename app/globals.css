@@ -8,14 +8,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ======== stream css overrides ======== */
 .str-video__call-stats {
   max-width: 500px;
   position: relative;
-}
-
-.str-video__speaker-layout__wrapper {
-  max-height: 700px;
 }
 
 .str-video__participant-details {
@@ -81,6 +81,7 @@
 }
 
 /* =============================== */
+
 @layer utilities {
   .flex-center {
     @apply flex justify-center items-center;
@@ -89,312 +90,23 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
-
-  /* Custom animations for navigation */
-  .animate-fade-in-up {
-    animation: fadeInUp 0.6s ease-out forwards;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  .animate-fade-in-left {
-    animation: fadeInLeft 0.8s ease-out forwards;
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-
-  .animate-fade-in-right {
-    animation: fadeInRight 0.8s ease-out forwards;
-    opacity: 0;
-    transform: translateX(30px);
-  }
-
-  .animate-scale-in {
-    animation: scaleIn 0.5s ease-out forwards;
-    opacity: 0;
-    transform: scale(0.9);
-  }
-
-  .animate-slide-up {
-    animation: slideUp 0.6s ease-out forwards;
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  .animate-slide-down {
-    animation: slideDown 0.4s ease-out forwards;
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-
-  /* Delay classes */
-  .delay-100 {
-    animation-delay: 0.1s;
-  }
-  .delay-200 {
-    animation-delay: 0.2s;
-  }
-  .delay-300 {
-    animation-delay: 0.3s;
-  }
-  .delay-500 {
-    animation-delay: 0.5s;
-  }
-  .delay-700 {
-    animation-delay: 0.7s;
-  }
-  .delay-1000 {
-    animation-delay: 1s;
-  }
 }
 
-/* animation */
-.show-block {
-  width: 100%;
-  max-width: 350px;
-  display: block;
-  animation: show 0.7s forwards linear;
-}
-
-@keyframes show {
-  0% {
-    animation-timing-function: ease-in;
-    width: 0%;
-  }
-  100% {
-    animation-timing-function: ease-in;
-    width: 100%;
-  }
-}
-
-/* New keyframe animations for navigation */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes scaleIn {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes slideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideDown {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Custom scrollbar for navigation */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e293b;
+  background: #0f172a; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #475569;
-  border-radius: 3px;
+  background: #334155;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
-}
-
-/* Smooth transitions for all interactive elements */
-button,
-a,
-input,
-textarea,
-select {
-  transition: all 0.3s ease;
-}
-
-/* Navigation specific styles */
-.nav-glass {
-  background: rgba(15, 23, 42, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(148, 163, 184, 0.1);
-}
-
-.nav-glass-hover {
-  background: rgba(30, 41, 59, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-/* Focus styles for accessibility */
-.focus-ring {
-  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-950;
-}
-
-/* Hover lift effect */
-.hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-/* Mobile navigation specific styles */
-@media (max-width: 768px) {
-  .mobile-nav-item {
-    @apply flex flex-col items-center justify-center py-2 px-1 text-xs;
-  }
-
-  .mobile-nav-active {
-    @apply text-blue-400;
-  }
-
-  .mobile-nav-inactive {
-    @apply text-slate-500;
-  }
-}
-
-/* Sidebar specific styles */
-.sidebar-collapsed {
-  width: 4rem;
-}
-
-.sidebar-expanded {
-  width: 16rem;
-}
-
-.sidebar-item-active {
-  @apply text-blue-400 bg-blue-600/10 border-r-2 border-blue-400;
-}
-
-.sidebar-item-inactive {
-  @apply text-slate-300 hover:text-white hover:bg-slate-800/50;
-}
-
-/* Breadcrumb styles */
-.breadcrumb-item {
-  @apply text-slate-400 hover:text-white transition-colors duration-300;
-}
-
-.breadcrumb-current {
-  @apply text-white font-medium;
-}
-
-/* Tab navigation styles */
-.tab-default-active {
-  @apply text-blue-400 bg-blue-600/10;
-}
-
-.tab-default-inactive {
-  @apply text-slate-400 hover:text-white hover:bg-slate-800/50;
-}
-
-.tab-pills-active {
-  @apply bg-blue-600 text-white shadow-lg;
-  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.25);
-}
-
-.tab-pills-inactive {
-  @apply text-slate-400 hover:text-white hover:bg-slate-800/50;
-}
-
-.tab-underline-active {
-  @apply border-blue-400 text-blue-400;
-}
-
-.tab-underline-inactive {
-  @apply border-transparent text-slate-400 hover:text-white hover:border-slate-600;
-}
-
-/* Notification badge styles */
-.notification-badge {
-  @apply absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center;
-  font-size: 10px;
-  line-height: 1;
-}
-
-/* Dropdown menu styles */
-.dropdown-glass {
-  background: rgba(15, 23, 42, 0.95);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(148, 163, 184, 0.2);
-}
-
-/* Loading states */
-.loading-spinner {
-  @apply animate-spin rounded-full border-2 border-transparent border-t-current;
-}
-
-/* Responsive utilities */
-@media (max-width: 640px) {
-  .mobile-hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .desktop-hidden {
-    display: none;
-  }
-}
-
-
-
-/* Toast custom styles */
-.toast-custom {
-  border-radius: 12px !important;
-  padding: 16px !important;
-  font-weight: 500 !important;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2) !important;
-}
-
-/* Toast animations */
-@keyframes toast-slide-in {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes toast-slide-out {
-  from {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(100%);
-    opacity: 0;
-  }
+  background: #475569;
 }
